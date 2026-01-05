@@ -1,0 +1,69 @@
+# Environment
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Checkpoints and model weights
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+checkpoints/
+notebooks/
+
+# MONAI cache
+.cache/
+monai_cache/
+
+# Data — never commit NIfTI files or the dataset
+data/raw/
+data/cache/
+*.nii
+*.nii.gz
+*.mha
+*.mhd
+
+# Splits file is safe to commit (just patient IDs, no data)
+!data/splits/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Logs and outputs
+logs/
+*.log
+results/
+outputs/
+
+# Streamlit
+.streamlit/
+
+# IDE
+.idea/
+*.swp
+*.swo
