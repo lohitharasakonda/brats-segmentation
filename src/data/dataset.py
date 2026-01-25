@@ -26,7 +26,6 @@ class BraTSSliceDataset(Dataset):
                 tumor_slices = [(patient_dir, i) for i in range(len(seg)) if seg[i].any()]
                 empty_slices = [(patient_dir, i) for i in range(len(seg)) if not seg[i].any()]
             else:
-                # fallback to nifti
                 try:
                     seg_vol = nib.load(Path(patient_dir) / f"{patient_id}_seg.nii").get_fdata()
                 except FileNotFoundError:
@@ -42,7 +41,7 @@ class BraTSSliceDataset(Dataset):
 
             # dont want too many empty slices
             max_empty = int(len(tumor_slices) * empty_ratio)
-            empty_slices = empty_slices[:max_empty]  # lazy, should probably sample but whatever
+            empty_slices = empty_slices[:max_empty]  
 
             self.samples += tumor_slices + empty_slices
 
