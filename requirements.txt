@@ -1,0 +1,21 @@
+#ML
+torch
+monai
+nibabel
+numpy
+scipy
+
+#Training utilities
+tqdm
+pandas
+
+#Visualization
+matplotlib
+pillow
+
+#Frontend
+streamlit
+
+#Config and environment
+pyyaml
+python-dotenv
