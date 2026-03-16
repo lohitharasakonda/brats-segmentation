@@ -20,21 +20,19 @@ env/
 
 # Jupyter
 .ipynb_checkpoints/
-*.ipynb_checkpoints
+notebooks/
 
 # Checkpoints and model weights
 checkpoints/
 *.pth
 *.pt
 *.ckpt
-checkpoints/
-notebooks/
 
 # MONAI cache
 .cache/
 monai_cache/
 
-# Data — never commit NIfTI files or the dataset
+# Data
 data/raw/
 data/cache/
 *.nii
@@ -42,7 +40,7 @@ data/cache/
 *.mha
 *.mhd
 
-# Splits file is safe to commit (just patient IDs, no data)
+# Splits file is safe to commit
 !data/splits/
 
 # macOS
@@ -54,11 +52,6 @@ data/cache/
 .vscode/
 *.code-workspace
 
-# Logs and outputs
-logs/
-*.log
-results/
-outputs/
 
 # Streamlit
 .streamlit/
