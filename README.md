@@ -88,4 +88,3 @@ streamlit run app/streamlit_app.py
 ## Environment
 
 Python 3.11 · PyTorch · MONAI · Streamlit 
-```
