@@ -4,14 +4,6 @@
 
 # Python
 __pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-.Python
-*.egg-info/
-dist/
-build/
-.eggs/
 
 # Virtual environments
 venv/
@@ -25,8 +17,6 @@ notebooks/
 # Checkpoints and model weights
 checkpoints/
 *.pth
-*.pt
-*.ckpt
 
 # MONAI cache
 .cache/
@@ -45,18 +35,9 @@ data/cache/
 
 # macOS
 .DS_Store
-.AppleDouble
-.LSOverride
+
 
 # VS Code
 .vscode/
-*.code-workspace
 
 
-# Streamlit
-.streamlit/
-
-# IDE
-.idea/
-*.swp
-*.swo
